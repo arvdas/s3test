@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 20px;
+            width: 80px;
+            border-radius: 5px;
+            height: 30px;
+            color: aliceblue;
+            font-size: 18px;
+            border: none;
+            background-color: rgb(175,102,243);
+        }
+        input[type=text]{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        input[type=number]{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        input[type=email]{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .img{
+            width: 50%;
+            float: right;
+        }
+        .form{
+            width: 50%;
+            float: left;
+        }
+        .div{
+            border: 10px black;
+            border-radius: 2px;
+            height: auto;
+            width: 100%;
+        }
+        .button{
+           float: left;
+           padding: 6px;
+           margin-left: 100px;
+           margin-top: 80px;
+        }
+        #butt{
+            margin-left: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <img  class="img" src= "lab-test.jpg" alt="lab test"/>
+    <form action="" id="lab-form" class="form">
+        <h1>1.Your Contact Details</h1>
+        <input type="text" title="name" placeholder="Full Name" required>
+        <input type="text" title="Patient_id" placeholder="Patient Id if exists"
+        required>
+        <br><br>
+        <input type="number" title="Contact no" placeholder="Phone Number" required>
+        <input type="email" title="email" placeholder="Email id"
+        required>
+        <br><br>
+        <h1>2.Address</h1>
+        <input type="number" title="H.no" placeholder="H.No" required>
+        <input type="text" title="Street" placeholder="Street" required><br><br>
+        <input type="text" title="Area" placeholder="Area" required>
+        <br><br>
+        <h3>3.District</h3>
+            <select name="District" id="">
+                <option value="Choose" selected>Choose</option>
+                <option value="district 1">District-1</option>
+                <option value="district 2">District-2</option>
+                <option value="district 3">District-3</option>
+                <option value="district 4">District-4</option>
+                <option value="district 5">District-5</option>
+            </select>
+            <input type="submit">
+            <br>
+            <h1>Choose the Test Tyoe</h1><p>(Check atleast one box without fail)</p>
+            <input type="checkbox" id="test 1" name="test 1" value="CBC">
+            <label for="test 1">CBC</label><br>
+            <input type="checkbox" id="test 2" name="test 2" value="Complete Urine">
+            <label for="test 2">Complete Urine</label><br>
+            <input type="checkbox" id="test 3" name="test 3" value="Lipid Profile">
+            <label for="test 3">Lipid Profile</label><br>
+            <input type="checkbox" id="test 4" name="test 4" value="TSH">
+            <label for="test 4">Thyroid Stimulating Hormone(TSH)</label><br>
+            <input type="checkbox" id="test 5" name="test 5" value="Glucose Test">
+            <label for="test 5">Glucose Test</label><br>
+            <h1>Do you want a hard copy of the report also?</h1>
+            <input type="radio" id="yes" name="answer" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="answer" value="no">
+            <label for="no">No</label><br>
+            <label for="testtime"><h1>Select your Comfortable Date and Time:</h1></label>
+            <input type="datetime-local" id="testtime" name="testtime">
+
+    </form>
+</div>
+
+<button id="butt" class="button" form="lab-form">Reset</button>
+<button  class="button" form="lab-form">Submit</button>
+</body>
+</html>
